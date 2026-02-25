@@ -1,8 +1,19 @@
-const form = document.querySelector('form');
+document.addEventListener('DOMContentLoaded', () => {
+const form = document.querySelector('#form');
+const mensagem = document.querySelector('#mensagem');
+if (form && mensagem) {
 form.addEventListener('submit', (e) =>{
-    e.preventDefault();
-    alert("Obrigado(a) por se cadastrar! Entraremos em contato em breve.");
+   e.preventDefault();
+            mensagem.textContent = "Obrigado(a) por se cadastrar! Entraremos em contato em breve.";
+            mensagem.style.color = "green";
+            mensagem.style.fontFamily = "arial";
+            mensagem.styledisplay = "block";
+            form.reset();
+         
 });
+}
+
+
 
 document.querySelector('.whatsapp_button').addEventListener('click', () => {
     window.open("https//wa.me/5511999999999", "_blanck");
@@ -12,11 +23,15 @@ function verificarHorario() {
     const agora = new Date();
     const hora = agora.getHours();
     const aberto = (hora >= 11 && hora < 20);
-    document.querySelector('footer').insertAdjacentHTML('beforeend',
-    `<p>Status: ${aberto ? "Aberto ✅" : "Fechado ❌"}</p>`
-);
+    const footer = document.querySelector('footer');
+    if (footer) {
+        document.querySelector('footer').insertAdjacentHTML('beforeend',
+            `<p>Status: ${aberto ? "Aberto ✅" : "Fechado ❌"}</p>`
+        );
+    }
 }
-verificarHorario();
+    verificarHorario();
+});
 
 document.querySelectorAll('.foto').forEach(foto => {
     foto.addEventListener('mouseenter', () => {
@@ -32,3 +47,4 @@ document.querySelectorAll('.foto').forEach(foto => {
         if (overlay) overlay.remove();
     });
 });
+
