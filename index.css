@@ -139,7 +139,7 @@ main p {
   font-family: 'HoshikoSatsuki';
   font-size: 1.2rem;
   text-align: center;
-  height: 397bpx;
+  height: 397px;
   padding: 10px;
   opacity: 0;
   transition: opacity 0.3s ease;
