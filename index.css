@@ -327,31 +327,6 @@ html {
 
 @media (max-width: 768px) {
   .nav_links {
-    flex-direction: column;  
-    align-items: center;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  p {
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav_links {
     flex-direction: column;
     align-items: center;
     margin: 0; 
@@ -366,7 +341,7 @@ html {
     flex-direction: column; 
   }
 
-  .galeria img {
+  .foto img {
     width: 80%;
     height: auto; 
   }
@@ -387,17 +362,42 @@ html {
   p {
     font-size: 0.95rem;
   }
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .forms {
+    width: 95%;
+    margin: 2% auto;
+    padding: 5%;
+  }
+
+  .formulario h1 {
+    font-size: 1.8rem;
+  }
+
 }
 
-
 @media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
   .nav_links {
     flex-direction: column;
     width: 100%;
     border-radius: 0;
   }
 
-  .galeria img {
+  .foto img {
     width: 100%;
     height: auto;
   }
@@ -422,22 +422,7 @@ html {
   p {
     font-size: 0.9rem;
   }
-}
 
-@media (max-width: 768px) {
-  .forms {
-    width: 95%;
-    margin: 2% auto;
-    padding: 5%;
-  }
-
-  .formulario h1 {
-    font-size: 1.8rem;
-  }
-}
-
-
-@media (max-width: 480px) {
   .forms {
     width: 100%;
     margin: 0;
@@ -450,6 +435,12 @@ html {
   }
 
   form input, form textarea, form select {
+    font-size: 1rem;
+  }
+
+  .foto::after {
+    height: 200pxb;
+    padding: 5px;
     font-size: 1rem;
   }
 }
