@@ -1,0 +1,451 @@
+body{
+    background-image: url(imagens/Sem\ título\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.protection{
+    background-color: aliceblue;
+    margin: 20%;
+    margin-top: 1%;
+   
+}
+
+nav {
+    position:static;
+    padding: 0.5%;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    padding-right: 2%;
+    padding-left: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 50px;
+    background-color: brown;
+}
+
+.nav_links  li {
+    padding:10px;
+}
+
+.btn_nav {
+    font-family: Arial;
+    font-size: 110%;
+    color: black;
+    text-decoration-line: none;
+}
+
+header {
+    background-color: rgb(243, 240, 247);
+    text-align: center;
+}
+
+header h2 {
+    font-family: 'HoshikoSatsuki';
+    font-size: 180%
+
+}
+
+.btn_whats {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+   
+}
+
+.whatsapp_button {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-family: 'HoshikoSatsuki';
+    font-size: 140%;
+    text-decoration-line: none;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: rgb(192, 48, 5);
+    padding: 10px 30px
+    
+    
+}
+
+.icon img{
+    margin: 0;
+    height: 24px;
+    width:auto;
+    display: block;
+}
+
+main{
+    background-color:aliceblue;
+}
+
+main h1 {
+    margin-left: 5%;
+    font-family: 'HoshikoSatsuki';
+    font-size: 250%
+}
+
+main p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+
+}
+
+.projetos {
+    justify-content: center;
+    text-align: justify;
+    padding: 15px;
+}
+
+.galeria {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.foto { 
+  position: relative;
+  display: inline-block;
+}
+
+.foto img {    
+    width: 200px;
+    height: 400px;
+    border: 8px solid;
+    border-color: brown;
+    display: block;
+}
+
+.foto::after {
+  content: attr(data-estilo);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  font-family: 'HoshikoSatsuki';
+  font-size: 1.2rem;
+  text-align: center;
+  height: 397bpx;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.foto:hover::after { 
+  opacity: 1;
+}
+
+.overlay { 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.artista {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5%;
+}
+
+.artista h1 {
+    text-align:justify;
+    font-family: 'HoshikoSatsuki';
+    font-size: 250%;
+    margin-left: 5%;
+    margin-bottom: 0%
+}
+
+.sobre{
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.sobre p {
+    font-family: Arial;
+    font-weight:lighter;
+    text-align:center;
+    font-size: 110%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.profile_picture {
+    display: flex;
+    justify-content: center;
+}
+
+.profile_picture img {
+    width: 100%;
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+   
+}
+
+form {
+    font-family: Arial;
+    margin: 0px;
+    padding: 0%;
+}
+.forms {
+    background-color: aliceblue;
+    padding: 5%;
+    margin: auto;
+    max-width: 600px;
+    width: 90%;
+    border: 8px solid;
+    border-color: brown;
+    box-sizing: border-box;
+}
+form textarea, form select   {
+  width: 100%;               
+  max-width: 500px;          
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+form p {
+    font-family: Arial;
+    font-weight: bold;
+}
+.formulario h1 {
+    margin-left: 5%;
+    font-family: 'HoshikoSatsuki';
+    font-size: 250%;
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="tel"] {
+  width: 100%;          
+  max-width: 400px;     
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+
+
+footer {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+}
+
+footer h1 { 
+    font-family: 'HoshikoSatsuki';
+    font-size: 250%;
+    text-align: left;
+}
+
+footer ul {
+    font-family: Arial;
+    font-size: 120%;
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+@font-face {
+    font-family: 'HoshikoSatsuki';
+    src: url('fonts/Hoshiko Satsuki.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'KashimaDemo';
+    src: url('fonts/Kashima Demo.otf') format('opentype')
+}
+@font-face {
+    font-family: 'YakusaDemoRegular';
+    src: url('fonts\YakuzaDemoRegular.ttf') format('truetype');
+}
+
+
+@media (max-width: 768px) {
+  .nav_links {
+    flex-direction: column;  
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav_links {
+    flex-direction: column;
+    align-items: center;
+    margin: 0; 
+    width: 90%; 
+  }
+
+  .protection {
+    margin: 5%; 
+  }
+
+  .galeria {
+    flex-direction: column; 
+  }
+
+  .galeria img {
+    width: 80%;
+    height: auto; 
+  }
+
+  .sobre {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .profile_picture img {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .nav_links {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .galeria img {
+    width: 100%;
+    height: auto;
+  }
+
+  .sobre {
+    margin: 5%;
+  }
+
+  .profile_picture img {
+    width: 100%;
+  }
+
+  .forms {
+    margin: 5%;
+    padding: 5%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .forms {
+    width: 95%;
+    margin: 2% auto;
+    padding: 5%;
+  }
+
+  .formulario h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .forms {
+    width: 100%;
+    margin: 0;
+    padding: 5%;
+    border-width: 4px; 
+  }
+
+  .formulario h1 {
+    font-size: 1.5rem;
+  }
+
+  form input, form textarea, form select {
+    font-size: 1rem;
+  }
+}
+
+
+
+
